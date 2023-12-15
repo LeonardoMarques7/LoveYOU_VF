@@ -644,67 +644,70 @@ const mensagensObj = [
         audio: "audios/audio4.mp3",
     },
     {
-        titulo: "You look like my next mistake. Love’s a game, wanna play?",
+        titulo: "TV taught me what to feel. Now real life has no appeal",
         traducao:
-            "Traduzido: Você parece meu próximo erro. O amor é um jogo, quer jogar?",
-        artista: "Taylor",
-        musica: "Are you satisfied?",
+            "Traduzido: A TV me ensinou o que sentir. Agora a vida real não tem nenhum apel",
+        artista: "Marina",
+        musica: "Are you Satisfied?",
         audio: "audios/audio5.mp3",
     },
     {
-        titulo: "You look like my next mistake. Love’s a game, wanna play?",
+        titulo:
+            "Flowers in my hair, I belong to the sea. Where we used to be, sitting by the orange trees. Summer is in the air, bodies in the heat. Just you and me, sitting by the orange trees.",
         traducao:
-            "Traduzido: Você parece meu próximo erro. O amor é um jogo, quer jogar?",
-        artista: "Taylor",
-        musica: "Obsessions",
+            "Traduzido: Flores no meu cabelo, eu pertenço ao mar. Onde costumávamos estar, sentados junto às laranjeiras. O verão está no ar, corpos no calor. Só você e eu, sentados junto às laranjeiras",
+        artista: "Marina",
+        musica: "Rootless",
         audio: "audios/audio6.mp3",
     },
     {
-        titulo: "You look like my next mistake. Love’s a game, wanna play?",
-        traducao:
-            "Traduzido: Você parece meu próximo erro. O amor é um jogo, quer jogar?",
-        artista: "Taylor",
-        musica: "Obsessions",
+        titulo: "You can't have peace without war.",
+        traducao: "Traduzido: Você não pode ter paz sem uma guerra.",
+        artista: "Marina",
+        musica: "Hermit the Frog",
         audio: "audios/audio7.mp3",
     },
     {
-        titulo: "You look like my next mistake. Love’s a game, wanna play?",
-        traducao:
-            "Traduzido: Você parece meu próximo erro. O amor é um jogo, quer jogar?",
-        artista: "Taylor",
-        musica: "Obsessions",
+        titulo: "Can you feel my heart?",
+        traducao: "Traduzido: Você consegue sentir meu coração?",
+        artista: "Bring Me The Horizon",
+        musica: "sTraNgeRs",
         audio: "audios/audio8.mp3",
     },
     {
-        titulo: "You look like my next mistake. Love’s a game, wanna play?",
+        titulo:
+            "Remember, if you write anything nasty about me, I'll show up and blow up your bathroom.",
         traducao:
-            "Traduzido: Você parece meu próximo erro. O amor é um jogo, quer jogar?",
-        artista: "Taylor",
-        musica: "Obsessions",
+            "Traduzido: Lembre-se, se você escrever qualquer coisa desagradável sobre mim, vou aparecer e explodir seu banheiro.",
+        artista: "Hole",
+        musica: "Violet",
         audio: "audios/audio9.mp3",
     },
     {
-        titulo: "You look like my next mistake. Love’s a game, wanna play?",
+        titulo:
+            "Do I honestly always seem to be dreaming of something I can never be?",
         traducao:
-            "Traduzido: Você parece meu próximo erro. O amor é um jogo, quer jogar?",
-        artista: "Taylor",
-        musica: "Obsessions",
+            "Traduzido: Honestamente pareço estar sempre sonhando com algo que nunca poderei ser?",
+        artista: "Korn",
+        musica: "H@rd3r",
         audio: "audios/audio10.mp3",
     },
     {
-        titulo: "You look like my next mistake. Love’s a game, wanna play?",
+        titulo:
+            "If you're spreading light, you don't care where the sunshine goes.",
         traducao:
-            "Traduzido: Você parece meu próximo erro. O amor é um jogo, quer jogar?",
-        artista: "Taylor",
-        musica: "Obsessions",
+            "Traduzido: Se você estiver espalhando a luz, você não se importa onde vai o sol.",
+        artista: "Nelly Furtado",
+        musica: "Maneater",
         audio: "audios/audio11.mp3",
     },
     {
-        titulo: "You look like my next mistake. Love’s a game, wanna play?",
+        titulo:
+            "You can tell me when it’s over, if the high was worth the pain.",
         traducao:
-            "Traduzido: Você parece meu próximo erro. O amor é um jogo, quer jogar?",
+            "Traduzido: Você pode me dizer quando acabar se os momentos bons superaram a dor.",
         artista: "Taylor",
-        musica: "Obsessions",
+        musica: "Out of the Woods ",
         audio: "audios/audio12.mp3",
     },
     {
@@ -712,23 +715,21 @@ const mensagensObj = [
         traducao:
             "Traduzido: Você parece meu próximo erro. O amor é um jogo, quer jogar?",
         artista: "Taylor",
-        musica: "Obsessions",
+        musica: "Bejeweled",
         audio: "audios/audio13.mp3",
     },
     {
-        titulo: "You look like my next mistake. Love’s a game, wanna play?",
-        traducao:
-            "Traduzido: Você parece meu próximo erro. O amor é um jogo, quer jogar?",
-        artista: "Taylor",
-        musica: "Obsessions",
+        titulo: "And all the fears you hold so dear.",
+        traducao: "Traduzido: E todos os medos a que você tanto se apega.",
+        artista: "Bôa",
+        musica: "Duvet",
         audio: "audios/audio14.mp3",
     },
     {
-        titulo: "You look like my next mistake. Love’s a game, wanna play?",
-        traducao:
-            "Traduzido: Você parece meu próximo erro. O amor é um jogo, quer jogar?",
-        artista: "Taylor",
-        musica: "Obsessions",
+        titulo: "What you waiting",
+        traducao: "Traduzido: O que você está esperando",
+        artista: "Gwen Stefani",
+        musica: "What You Waiting For?",
         audio: "audios/audio15.mp3",
     },
     {
@@ -861,27 +862,27 @@ const mensagensObj = [
     },
 ];
 
-function generateHTML(msg) {
+function generateHTML(mensagensObj) {
     const dia = document.createElement("div");
     dia.classList.add("mensagem-dia");
 
     dia.innerHTML = `
-        <h2 class="title-message">${msg.titulo}</h2>
+        <h2 class="title-message">${mensagensObj.titulo}</h2>
         <p class="mb-2">
-            <small class="subtitle-message">${msg.traducao}</small>
+            <small class="subtitle-message">${mensagensObj.traducao}</small>
         </p>
         
-        <code class="code-message">${msg.artista}</code>
+        <code class="code-message">${mensagensObj.artista}</code>
         
         <div class="column mt-2">
             <p class="p-badge-message">
                 <span class="badge-message">
-                    Música de Hoje: <span class="text-color">${msg.musica}</span>
+                    Música de Hoje: <span class="text-color">${mensagensObj.musica}</span>
                 </span>
             </p>
             <div class="border border-light rounded border-audio">
                 <audio controls id="audio" class="audio">
-                    <source src="${msg.audio}" type="audio/mpeg" />
+                    <source src="${mensagensObj.audio}" type="audio/mpeg" />
                     Seu navegador não suporta o elemento de áudio.
                 </audio>
             </div>
