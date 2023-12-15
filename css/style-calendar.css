@@ -1,0 +1,195 @@
+.calendario {
+    color: #3e2641;
+    max-width: 1000px;
+    margin: 0px auto;
+    border: 1px solid #adadad;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.calendario h2 {
+    margin-left: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    border-bottom: 1px solid #b8b8b8;
+}
+
+.dias {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+code {
+    color: #6b0079 !important;
+}
+
+.dia-mes {
+    margin: 10px;
+    border: 1px solid #6b0079;
+    height: 50px;
+    color: #333;
+    background-color: rgba(94, 0, 94, 0.308);
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+    position: relative;
+    display: flex;
+}
+
+.dia-mes:before {
+    content: "\2665";
+    position: absolute;
+    top: 0px;
+    left: -10px;
+    font-size: 24px;
+    color: #6b0079;
+}
+
+.dia-mes:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 900px) {
+    .calendario {
+        margin: 20px 10px;
+    }
+
+    .dia-mes {
+        margin: 5px;
+    }
+
+    .mensagem-dia {
+        margin: 20px 10px !important;
+    }
+
+    .dias {
+        justify-content: center;
+    }
+
+    .badge-message {
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width: 350px) {
+    .dia-mes {
+        width: 40px;
+        height: 40px;
+    }
+    .dias {
+        justify-content: center;
+    }
+}
+
+.mensagem-dia {
+    max-width: 1000px;
+    border-radius: 5px;
+    border: 1px solid #adadad;
+    padding: 20px 30px;
+    margin: 30px auto;
+    box-shadow: 0px 0px 53px -23px rgba(120, 0, 122, 1);
+    -webkit-box-shadow: 0px 0px 53px -23px rgba(120, 0, 122, 1);
+    -moz-box-shadow: 0px 0px 53px -23px rgba(120, 0, 122, 1);
+    margin-bottom: 30px;
+    transition: height 0.5s ease;
+}
+
+.column {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.border-audio {
+    display: flex;
+    align-items: center;
+    background-color: #f1f3f4;
+}
+
+.text-color {
+    color: #6b0079;
+}
+
+#audio {
+    max-width: 100%;
+}
+
+#audio::-webkit-media-controls-panel {
+    background-color: transparent !important;
+    border-radius: 1px !important;
+}
+
+/* b700cf63 | 760083 */
+
+#audio::-webkit-media-controls-mute-button,
+#audio::-webkit-media-controls-play-button {
+    border-radius: 50%;
+    background-color: #ffffff63 !important;
+}
+
+#audio::-webkit-media-controls-current-time-display,
+#audio::-webkit-media-controls-time-remaining-display {
+    color: #1b1b1b;
+}
+
+#audio::-webkit-media-controls-timeline {
+    background-color: #ffffff63 !important;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* Estilização da Mensagem */
+
+.title-message {
+    font-size: 2rem;
+    color: #1b1b1b;
+}
+
+.subtitle-message {
+    font-size: 1rem;
+    color: #5c5c5c;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.code-message {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.badge-message {
+    background-color: #292929;
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: #eee;
+    font-weight: bold;
+}
+
+.p-badge-message {
+    margin-bottom: 15px;
+}
+
+.mb-2 {
+    margin-bottom: 10px;
+}
+
+.mt-2 {
+    margin-top: 10px;
+}
+
+.semana {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #5c5c5c;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    color: #3e2641;
+}

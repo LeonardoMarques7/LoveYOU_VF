@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-image: url("/fotos/fundo.png");
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3f0047;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+::-webkit-scrollbar {
+    width: 10px !important;
+    background-color: transparent;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    border: 1px solid #3f0047;
+    padding: 30px;
+    border-radius: 4px;
+    background-color: #ffffffde;
+}
+
+/* 3f00470c */
+
+.intro {
+    text-align: start;
+    padding-bottom: 30px;
+    margin-bottom: 0px;
+}
+
+.timeline {
+    margin-bottom: 50px;
+    text-align: start;
+}
+
+.text-intro {
+    font-size: 18px;
+}
+
+.ul-time {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.title-post {
+    font-size: 20px;
+}
+
+.li-img-time {
+    text-align: start;
+    white-space: none;
+    background-color: #5e5e5e1a;
+    border: 1px solid #ccc;
+    color: #1f1f1f;
+    max-width: 400px;
+    list-style: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.li-img-time img {
+    border-radius: 10px 10px 4px 4px;
+}
+
+.flex-post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link-time {
+    width: 100%;
+}
+
+/* Outros estilos */
+
+.btn-like {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border-radius: 50%;
+    position: relative;
+}
+
+.heart {
+    display: block;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    transition: color 0.3s ease-in-out;
+    color: black; /* Definindo a cor inicial do coração */
+}
+
+.liked .heart {
+    color: #cb00e6; /* Alterando a cor do coração para vermelho quando o botão é clicado */
+}
+
+.theme-dark {
+    background-color: #1a1a1a;
+}
+
+.title-intro {
+    margin-top: 30px;
+    font-size: 2rem;
+}
+
+/* .navbar {
+    background-image: url("https://img.freepik.com/vetores-premium/ilustracao-do-vetor-de-pequeno-padrao-de-coracoes-vermelhos-e-cor-de-rosa-no-fundo-branco_1220-2188.jpg?w=740");
+    border-radius: 4px;
+    padding: 15px 15px;
+    margin: 0px auto;
+    margin-bottom: 50px;
+    
+    backdrop-filter: blur(10px);
+    
+    background-color: rgba(
+        255,
+        0,
+        0,
+        0.8
+    );
+}
+
+ffd6d60e
+
+.li-nav {
+    list-style: none;
+}
+
+.ul-links {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.nav-link {
+    color: #6e5454;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-bottom: 1px solid #3f3f3f13;
+}
+
+.nav-link:hover {
+    color: #a04848;
+}
+
+.nav-link i {
+    color: rgb(163, 0, 0);
+} */
+
+#spotify {
+    height: 0; /* Começa com altura zero */
+    overflow: hidden; /* Esconde o conteúdo que não cabe na altura atual */
+    transition: height 0.5s ease; /* Adiciona transição suave à altura */
+}
+
+.btn-spotify {
+    border: 1px solid #1a1a1a;
+    background-color: transparent;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: 0.5s;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-spotify:hover {
+    background-color: #3f0047;
+    color: #eee;
+}
+
+@media (max-width: 900px) {
+    .intro {
+        margin: 0px 20px;
+    }
+
+    .title {
+        margin: 0px 20px;
+    }
+
+    main {
+        border: 0px solid #3f0047;
+        padding: 20px;
+        background-color: #ffffffde;
+    }
+
+    .ul-time {
+        width: 100%;
+        margin-top: 20px;
+        justify-content: center;
+    }
+}
+
+.title {
+    font-size: 1.5rem;
+    text-align: start;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #1a1a1a3a;
+    padding-bottom: 30px;
+}
+
+.intro i {
+    color: #3f0047;
+}
+
+.navbar {
+    overflow: hidden !important;
+    background-color: #1a1a1a1e !important;
+    border-radius: 4px !important;
+}
+
+/* Contador de Dias */
+
+/* #contandos-dias {
+    border: 1px solid #1a1a1a;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+#contandos-dias h1 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #525252;
+}
+
+#contandos-dias p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-bottom: 0px;
+}
+
+#contandos-dias #contador {
+    color: #5c0068;
+}
+ */
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #1a1a1a;
+    padding: 20px;
+    border-radius: 4px;
+    gap: 5px;
+}
+
+.time-element {
+    border: 2px solid #6b0079;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.time-element:before {
+    content: "\2665";
+    position: absolute;
+    top: 0px;
+    left: -10px;
+    font-size: 24px;
+    color: #6b0079;
+}
+
+.container span {
+    color: #6b0079;
+    font-weight: bold;
+}
+
+#contandos-dias {
+    margin-bottom: 50px;
+}
+
+@media (max-width: 900px) {
+    .container {
+        max-width: 100%;
+        font-weight: bold;
+    }
+
+    .container span {
+        font-size: 12px;
+    }
+
+    .time-element:before {
+        display: none;
+    }
+
+    .container h1 {
+        display: none;
+    }
+
+    .time-element {
+        border: none;
+    }
+}
+
+footer {
+    margin: 100px auto;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+}
+
+footer small {
+    color: #6b0079;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.hearts-container {
+    position: relative;
+}
+
+.hearts-container span {
+    display: inline-block;
+    color: #6b0079;
+    margin-top: 20px;
+    font-size: 24px;
+    animation: heartAnimation 1.5s ease-in-out infinite;
+}
+
+@keyframes heartAnimation {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-20px) scale(1.2);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(-40px) scale(1);
+        opacity: 0;
+    }
+}
+
+.hearts-container span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.hearts-container span:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.hearts-container span:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.hearts-container span:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.hearts-container span:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.hearts-container span:nth-child(7) {
+    animation-delay: 0.7s;
+}
+
+.hearts-container span:nth-child(8) {
+    animation-delay: 0.8s;
+}
+
+.hearts-container span:nth-child(9) {
+    animation-delay: 0.9s;
+}
+
+.hearts-container span:nth-child(10) {
+    animation-delay: 1s;
+}
