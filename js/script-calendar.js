@@ -180,27 +180,26 @@ const mensagensObj = [
         audio: "audios/audio22.mp3",
     },
     {
-        titulo: "You look like my next mistake. Love’s a game, wanna play?",
+        titulo: "I touch my phone as if it's your face.",
         traducao:
-            "Traduzido: Você parece meu próximo erro. O amor é um jogo, quer jogar?",
+            "Traduzido: Eu toco no meu celular como se fosse o seu rosto.",
         artista: "Taylor",
-        musica: "Obsessions",
+        musica: "You're On Your Own, Kid",
         audio: "audios/audio23.mp3",
     },
     {
-        titulo: "You look like my next mistake. Love’s a game, wanna play?",
-        traducao:
-            "Traduzido: Você parece meu próximo erro. O amor é um jogo, quer jogar?",
-        artista: "Taylor",
-        musica: "Obsessions",
+        titulo: "'Cause I dance like an aristocrat.",
+        traducao: "Traduzido: Porque eu danço como um aristocrata.",
+        artista: "Poppy",
+        musica: "Aristocrat",
         audio: "audios/audio24.mp3",
     },
     {
-        titulo: "You look like my next mistake. Love’s a game, wanna play?",
+        titulo: "私がいる限り、あなたは最強です。",
         traducao:
-            "Traduzido: Você parece meu próximo erro. O amor é um jogo, quer jogar?",
-        artista: "Taylor",
-        musica: "Obsessions",
+            "Traduzido: Enquanto eu estiver aqui, você será o mais forte.",
+        artista: "Haikyuu",
+        musica: "Fly high",
         audio: "audios/audio25.mp3",
     },
     {

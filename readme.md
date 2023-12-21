@@ -24,3 +24,6 @@ voice motionless - audio19
 brand new city - audio20
 deeply - audio21
 hollaback Girl - audio22
+You’re on Your Own, Kid - audio23
+aristocrat - audio24
+fly high - audio25
